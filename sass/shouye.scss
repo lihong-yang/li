@@ -1,0 +1,479 @@
+// $fontSize:14px;
+// $background:red;
+// body {
+//     font-size: $fontSize;
+//     background: $background;
+// }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+i,
+b {
+    font: 12px 'Microsoft Yahei', Tahoma, Simsun;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+#shouye {
+    width: 1200px;
+    background: red;
+    margin: auto;
+}
+
+.loginBar {
+    height: 30px;
+    /* width: auto; */
+    border-bottom: 1px solid #ddd;
+    background: #f5f5f5;
+    position: relative;
+    z-index: 1002;
+}
+
+.logo {
+    height: 94px;
+    background: white;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+
+/* .nav {
+    height: 70px;
+    background: dodgerblue
+} */
+
+.header {
+    height: 430px;
+    background: pink;
+    position: relative
+}
+
+.main .ggzl {
+    height: 592px;
+    background: yellow;
+    position: relative;
+}
+
+.main .ggls {
+    height: 1075px;
+    background: green
+}
+
+.main .ggbj {
+    height: 1075px;
+    background: blue;
+}
+
+.main .ggry {
+    height: 1075px;
+    background: darkred
+}
+
+.main .ggqy {
+    height: 1075px;
+    background: khaki
+}
+
+.subMeun {
+    height: 100px;
+    background: darkcyan;
+    margin: 19px 0
+}
+
+.footer {
+    height: 357px;
+    background: firebrick
+}
+
+.logo .logo-left {
+    height: 94px;
+    width: 268px;
+    background: white;
+    display: inline-block;
+    float: left
+}
+
+#Input {
+    /* float: right; */
+    border: #459d36 solid 2px;
+    background: 0 0;
+    padding: 0 5px 0 15px;
+    width: 382px;
+    height: 30px;
+    outline: 0;
+    line-height: 30px;
+    font-size: 14px;
+    float: left;
+    box-sizing: inherit;
+    background: white;
+    color: #999;
+    font-size: 12px;
+    word-wrap: break-word;
+    margin: 23px 0 0 33px;
+}
+
+#btn {
+    border: 0;
+    width: 73px;
+    height: 34px;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: #459d36;
+    color: #FFF;
+    font-size: 14px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+    margin: 23px 0 0 0;
+    float: left;
+    border: none
+}
+
+.logo .logo-right {
+    margin: 23px 0 0;
+    width: 130px;
+    height: 39px;
+    text-align: center;
+    text-indent: 2em;
+    /* background: url(../img/css/shopping-cart.gif) no-repeat; */
+    float: right;
+    margin-right: 23px;
+    position: relative;
+}
+
+.logo-right a {
+    text-decoration: none;
+    float: right;
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    color: #666;
+    font-size: 12px;
+}
+
+.logo-right em {
+    font-style: normal
+}
+
+.header .header-top {
+    width: 972px;
+    height: 34px;
+    background: dodgerblue;
+    float: right
+}
+
+.header .header-left {
+    width: 228px;
+    height: 394px;
+    background: saddlebrown
+}
+
+.header .header-center {
+    width: 770px;
+    height: 360px;
+    background: darkblue;
+    float: right;
+    position: absolute;
+    top: 34px;
+    left: 228px
+}
+
+.header .header-right {
+    width: 202px;
+    height: 360px;
+    background: tomato;
+    float: right;
+    position: absolute;
+    top: 34px;
+    right: 0
+}
+
+// .main .ggzl p {
+//     height: 37px;
+//     background: violet;
+// }
+.main .ggzl span {
+    height: 35px;
+    width: 323px;
+    background: white;
+    // border: 1px solid blueviolet;
+    display: inline-block
+}
+
+.main .ggzl p {
+    height: 35px;
+    width: 631px;
+    background: wheat;
+    display: inline-block;
+    // border: 1px solid blueviolet;
+    margin-top: 0px;
+}
+
+.main .ggzl .ul {
+    height: 35px;
+    width: 240px;
+    background: rebeccapurple;
+    float: right;
+    border: 1px solid #cecece;
+    position: relative
+}
+
+.main .ggzl .ul li {
+    float: left;
+    list-style: none;
+}
+
+.main .ggzl .ul li:nth-child(1) {
+    background: yellow;
+    height: 35px;
+    width: 64px;
+    // border: 1px solid #cecece;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.main .ggzl .ul li:nth-child(2) {
+    background: pink;
+    height: 35px;
+    width: 88px;
+    // border: 1px solid #cecece;
+    position: absolute;
+    left: 63.6px;
+    top: 0
+}
+
+.main .ggzl .ul li:nth-child(3) {
+    background: red;
+    height: 35px;
+    width: 88px;
+    // border: 1px solid #cecece;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+hr {
+    color: green;
+    margin-top: -5px;
+}
+
+.main .ggzl-left {
+    width: 328px;
+    height: 477px;
+    background: saddlebrown;
+    margin-top: -6px;
+    position: relative;
+}
+
+.main .ggzl-left-bottom {
+    width: 328px;
+    height: 178px;
+    background: #cecece;
+    position: absolute;
+    bottom: 0;
+    opacity: .7
+}
+
+.main .ggzl-left-bottom-top {
+    height: 30px;
+    width: 298px;
+    background: red;
+    margin-left: 17px;
+    margin-top: 15px;
+}
+
+.main .ggzl-left-bottom-bottom {
+    height: 102px;
+    width: 302px;
+    background: yellow;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.main .ggzl-left-bottom-bottom .hot {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    //align-content: space-around
+}
+
+.main .ggzl-left-bottom-bottom li {
+    height: 24px;
+    width: 87px;
+    background: white;
+    list-style: none;
+    margin: 5px 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    // float: left
+}
+
+.main .ggzl-right .box1 {
+    width: 390px;
+    height: 299px;
+    border: 1px solid #cecece;
+    float: left;
+    background: blue;
+    margin-top: -478px;
+    margin-left: 328px;
+}
+
+.main .ggzl-right .box2 {
+    width: 480px;
+    height: 149px;
+    border: 1px solid #cecece;
+    background: blue;
+    float: right;
+    margin-top: -478px;
+}
+
+.main .ggzl-right .box3 {
+    width: 480px;
+    height: 149px;
+    border: 1px solid #cecece;
+    background: blue;
+    float: right;
+    margin-top: -329px;
+}
+
+.main .ggzl-right .box4 {
+    width: 289px;
+    height: 178px;
+    border: 1px solid #cecece;
+    background: blue;
+    margin-left: 328px;
+    position: absolute;
+    top: 342px;
+}
+
+.main .ggzl-right .box5 {
+    width: 289px;
+    height: 178px;
+    border: 1px solid #cecece;
+    background: blue;
+    right: 0px;
+    position: absolute;
+    top: 342px;
+}
+
+.main .ggzl-right .box6 {
+    width: 289px;
+    height: 178px;
+    border: 1px solid #cecece;
+    background: blue;
+    right: 291px;
+    position: absolute;
+    top: 342px;
+}
+
+.main .ggzl-bottom {
+    height: 69px;
+    border: 1px solid #cecece;
+    background: wheat;
+}
+
+.main .ggzl-bottom ul {
+    justify-content: space-around;
+    display: flex;
+    width: 1200px;
+}
+
+.main .ggzl-bottom li {
+    height: 68px;
+    width: 149px;
+    border: 1px solid #cecece;
+    list-style: none;
+    margin-left: -81px;
+    margin-top: -11px;
+}
+
+.main .ggls span {
+    height: 35px;
+    width: 329px;
+    background: white;
+    // border: 1px solid blueviolet;
+    display: inline-block
+}
+
+.main .ggls p {
+    height: 35px;
+    width: 350px;
+    background: wheat;
+    display: inline-block;
+    // border: 1px solid blueviolet;
+    margin-top: 0px;
+}
+
+.main .ggls .ul {
+    height: 35px;
+    width: 240px;
+    background: rebeccapurple;
+    float: right;
+    border: 1px solid #cecece;
+    position: relative
+}
+
+.main .ggls .UL li {
+    list-style: none;
+    float: right;
+}
+
+.main .ggls .UL li:nth-child(1) {
+    background: yellow;
+    height: 35px;
+    width: 64px;
+    // border: 1px solid #cecece;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.main .ggls .UL li:nth-child(2) {
+    background: pink;
+    height: 35px;
+    width: 88px;
+    // border: 1px solid #cecece;
+    position: absolute;
+    left: 63.6px;
+    top: 0
+}
+
+.main .ggls .UL li:nth-child(3) {
+    background: red;
+    height: 35px;
+    width: 88px;
+    // border: 1px solid #cecece;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+hr {
+    color: green;
+    margin-top: -5px;
+}
