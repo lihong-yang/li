@@ -6,16 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../dist/css/shouye.css">
+    <script src="../js/jquery-1.11.0.js"></script>
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <script src="../js/index.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <div id="shouye">
-        <div class="loginBar"></div>
+        <div class="loginBar">
+            <ul class="top">
+                <li>
+                    <a href="http://www.epet.com/"><img src="../img/ia_100000280.png" alt=""> E宠首页</a>
+
+                </li>
+                <li>送至:</li>
+                <li class="bj">北京</li>
+                <li></li>
+                <li>
+                    <a href="http://www.epet.com/zhengpin/main.html?do=newgoods"><img src="../img/ia_1000003651.jpg" alt=""> E宠就是正品</a>
+                </li>
+            </ul>
+        </div>
+        <div class="place-hide hide" align="left" style="display:none;">
+            <div class="citys bgwhite">
+                <ul class="place-header">
+                    <li class="title-province current" data-placeid="1" data-parentid="0">北京</li>
+                    <li class="title-city" style="display:none;" data-placeid="35" data-parentid="1">北京</li>
+                    <li class="title-area" data-placeid="47" data-parentid="35">西城区</li>
+                    <hr>
+                    <li class="title-high" data-placeid="0" data-parentid="47"></li>
+                    <li class="title-street" data-placeid="0" data-parentid="0"></li>
+                </ul>
+                <div class="place-content">
+                    <div class="place-province" data-type="province" style="display: block;">
+                        <div class="city-conbox bgwhite c666 mt5">
+                            <div class="pt10 pl10 pr10 pb5">
+                                <span>华北：</span>
+                                <a href="javascript:;" data-placeid="1" class="current">北京</a>
+                                <a href="javascript:;" data-placeid="2">天津</a>
+                                <a href="javascript:;" data-placeid="3">河北</a>
+                                <a href="javascript:;" data-placeid="4">山西</a>
+                                <a href="javascript:;" data-placeid="5">内蒙古</a>
+                            </div>
+                            <div class="pt10 pl10 pr10 pb5">
+                                <span>华东：</span>
+                                <a href="javascript:;" data-placeid="9">上海</a>
+                                <a href="javascript:;" data-placeid="10">江苏</a>
+                                <a href="javascript:;" data-placeid="11">浙江</a>
+                                <a href="javascript:;" data-placeid="12">安徽</a>
+                                <a href="javascript:;" data-placeid="13">福建</a>
+                                <a href="javascript:;" data-placeid="15">山东</a>
+                            </div>
+                            <div class="pt10 pl10 pr10 pb5">
+                                <span>华南：</span>
+                                <a href="javascript:;" data-placeid="20">广东</a>
+                                <a href="javascript:;" data-placeid="28">广西</a>
+                                <a href="javascript:;" data-placeid="21">海南</a>
+                            </div>
+                            <div class="pt10 pl10 pr10 pb5">
+                                <span>华中：</span>
+                                <a href="javascript:;" data-placeid="14">江西</a>
+                                <a href="javascript:;" data-placeid="17">河南</a>
+                                <a href="javascript:;" data-placeid="18">湖北</a>
+                                <a href="javascript:;" data-placeid="19">湖南</a>
+                            </div>
+                            <div class="pt10 pl10 pr10 pb5">
+                                <span>西南：</span>
+                                <a href="javascript:;" data-placeid="24">重庆</a>
+                                <a href="javascript:;" data-placeid="25">四川</a>
+                                <a href="javascript:;" data-placeid="26">贵州</a>
+                                <a href="javascript:;" data-placeid="27">云南</a>
+                                <a href="javascript:;" data-placeid="29">西藏</a>
+                            </div>
+                            <div class="pt10 pl10 pr10 pb5">
+                                <span>西北：</span>
+                                <a href="javascript:;" data-placeid="30">陕西</a>
+                                <a href="javascript:;" data-placeid="31">甘肃</a>
+                                <a href="javascript:;" data-placeid="32">青海</a>
+                                <a href="javascript:;" data-placeid="33">宁夏</a>
+                                <a href="javascript:;" data-placeid="34">新疆</a>
+                            </div>
+                            <div class="pt10 pl10 pr10 pb5">
+                                <span>东北：</span>
+                                <a href="javascript:;" data-placeid="6">辽宁</a>
+                                <a href="javascript:;" data-placeid="7">吉林</a>
+                                <a href="javascript:;" data-placeid="8">黑龙江</a>
+                            </div>
+                            <div class="pt10 pl10 pr10 pb5">
+                                <span>其他：</span>
+                                <a href="javascript:;" data-placeid="22" data-index="2">香港</a>
+                                <a href="javascript:;" data-placeid="23" data-index="2">澳门</a>
+                                <a href="javascript:;" data-placeid="16">台湾</a>
+                                <a href="javascript:;" data-placeid="49574" data-index="2">钓鱼岛</a>
+                                <a href="javascript:;" data-placeid="49579" data-index="2">南沙群岛</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-city hide city-conbox bgwhite c666 mt5" style="display: none;"></div>
+                    <div class="place-area hide city-conbox bgwhite c666 mt5" style="display: none;"></div>
+                    <div class="place-high hide city-conbox bgwhite c666 mt5" style="display: none;"></div>
+                    <div class="place-street hide city-conbox bgwhite c666 mt5" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
         <div class="logo">
-            <div class="logo-left"></div>
+            <div class="logo-left">
+                <a href="http://www.epet.com/"><img src="../img/E宠商城.jpg" alt=""></a>
+
+            </div>
             <input type="text" value="卫仕" id="Input">
             <button id="btn">搜索</button>
+            <div class="keywords">
+                <label>热门搜索：</label>
+                <a class="cred" href="https://list.epet.com/search/main.html?keyword=%E4%BC%AF%E7%BA%B3%E5%A4%A9%E7%BA%AF&amp;pet_type=dog&amp;version=2.0.0&amp;attrid=" target="_blank">伯纳天纯</a><span> |</span> <a href="http://list.epet.com/search/main.html?keyword=%E5%86%A0%E8%83%BD&amp;pet_type=dog&amp;version=2.0.0&amp;attrid="
+                    target="_blank">冠能</a><span> |</span> <a href="https://list.epet.com/search/main.html?keyword=%E9%BA%A6%E5%BE%B7%E6%B0%8F&amp;pet_type=dog&amp;version=2.0.0&amp;attrid=" target="_blank">麦德氏</a><span> |</span> <a href="https://list.epet.com/search/main.html?keyword=%E7%B2%91%E7%B2%91%E6%8A%93&amp;pet_type=dog&amp;version=2.0.0&amp;attrid="
+                    target="_blank">粑粑抓</a><span> |</span> <a href="https://list.epet.com/search/main.html?keyword=%E5%B0%8F%E9%9D%92%E9%B2%A8&amp;pet_type=dog&amp;version=2.0.0&amp;attrid=" target="_blank">小青鲨</a> </div>
             <div class="logo-right">
                 <img src="../img/shopping-cart.gif" alt="">
                 <a class="gwc" href="http://www.epet.com/cart.html">购物车(<em data-name="gwc-num">0</em>)</a>
@@ -23,15 +130,125 @@
         </div>
         <!-- <div class="nav"></div> -->
         <div class="header">
-            <div class="header-top"></div>
-            <div class="header-left"></div>
-            <div class="header-center">11111</div>
-            <div class="header-right"></div>
+            <div class="header-top">
+                <ul class="menus">
+                    <li>
+                        <a target="_blank" class="mns" href="https://sale.epet.com/mould/temai/dog.html"><b></b>品牌特卖</a>
+                    </li>
+                    <li><a target="_blank" class="mns" href="http://www.epet.com/video/fashiondog.html?pet_type=dog"><b></b>潮品视频</a></li>
+                    <li><a target="_blank" class="mns" href="http://www.epet.com/epetube/Main.html"><b></b>小剧场</a></li>
+                    <li><a target="_blank" class="mns" href="
+                                                 http://www.epet.com/zt/knowledge/main.html?pet_type=dog                     "><b></b>E宠课堂</a></li>
+                    <li><a target="_blank" class="mns" href="http://www.epet.com/union/trial.html"><b></b>萌爪联盟</a></li>
+                    <li><a target="_blank" class="mns" href="http://www.epet.com/cleargoodsmdog.html"><b></b>清仓特价</a></li>
+                </ul>
+            </div>
+            <div class="header-left">
+                <div class="header-left-top">
+                    <span class="epet-type hov" style="background-color: rgb(70, 171, 80); border-color: rgb(70, 171, 80); opacity: 1;">
+                                        <a href="http://www.epet.com/" class="petselct"> 狗狗<b class="cate1"><img src="../img/ia_100000345.jpg" alt=""></b></a>
+                                        <div class="news-img hide"></div>
+                                        <a href="#" class="news-close"></a></span>
+                    <i>商品分类 <img src="../img/ia_1000003451.jpg" alt=""></i>
+
+
+                </div>
+
+                <!-- <div class="header-left-bottom">
+                    <div class="header-left-bottom-top">
+                        <a href="http://www.epet.com/"><img src="../img/ia_100000323.jpg" alt=""></a>
+                        <p class="5703"><b class="cstress">5703</b>种精选宝贝</p>
+                        <a href="http://www.epet.com/" class="ld">正在狗狗站溜达...</a>
+                    </div>
+                    <div class="header-left-bottom-bottom">
+                        <a href="http://www.epet.com/"><img src="../img/ia_1000003231.jpg" alt=""></a>
+                        <p class="3905"><b class="cstress">3905</b>种精选宝贝</p>
+                        <a href="http://www.epet.com/" class="qh">切换到猫猫站</a>
+                    </div>
+                </div> -->
+                <div class="header-left-bottom1">
+                    <ul>
+                        <a href="https://list.epet.com/5.html">
+                            <li>主粮</li>
+                        </a>
+                        <a href="https://list.epet.com/5.html">
+                            <li>零食<span>></span></li>
+                        </a>
+                        <a href="https://list.epet.com/5.html">
+                            <li>窝垫</li>
+                        </a>
+                        <a href="https://list.epet.com/5.html">
+                            <li>玩具<span>></span></li>
+                        </a>
+                        <a href="https://list.epet.com/5.html">
+                            <li>清洁</li>
+                        </a>
+                        <a href="https://list.epet.com/5.html">
+                            <li>保健<span>></span></li>
+                        </a>
+                        <a href="https://list.epet.com/5.html">
+                            <li>护理</li>
+                        </a>
+                        <a href="https://list.epet.com/5.html">
+                            <li>生活<span>></span></li>
+                        </a>
+                        <a href="https://list.epet.com/5.html">
+                            <li>牵引</li>
+                        </a>
+                        <a href="https://list.epet.com/5.html">
+                            <li>洗澡<span>></span></li>
+                        </a>
+                        <a href="https://list.epet.com/5.html">
+                            <li>服饰</li>
+                        </a>
+                        <a href="https://list.epet.com/5.html">
+                            <li>美容<span>></span></li>
+                        </a>
+                    </ul>
+                    <div class="header-left-bottom1-bottom">
+                        <p onclick="window.open('https://sale.epet.com/mould/temai/dog.html');"><img src="../img/ia_100000140.png"> 正在进行的品牌特卖<a>26</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 轮播 -->
+            <div class="header-center">
+
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../img/ia_100000146.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/ia_100000147.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/ia_100000148.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/ia_100000149.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/ia_100000150.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/ia_100000151.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/ia_100000152.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/ia_100000153.jpg" alt=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+            <div class="header-right">
+                <ul>
+                    <a href="https://wap.epet.com/app/opgc/main">
+                        <li><img src="../img/ia_100000154.jpg" alt=""></li>
+                    </a>
+                    <a href="https://wap.epet.com/app/opgc/main">
+                        <li><img src="../img/ia_100000155.jpg" alt=""></li>
+                    </a>
+                    <a href="https://wap.epet.com/app/opgc/main">
+                        <li><img src="../img/ia_100000156.png" alt=""></li>
+                    </a>
+                </ul>
+            </div>
         </div>
         <div class="main">
             <div class="ggzl">
-                <span>2222222</span>
-                <p>111</p>
+                <span><img src="../img/ia_100000280.png" alt="">狗狗主粮</span>
+
                 <div class="ul">
                     <ul>
                         <li>1</li>
@@ -103,5 +320,18 @@
         <div class="footer"></div>
     </div>
 </body>
+<script src="../js/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function(index, className) {
+                return '<span class="' + className + '">' + (index + 1) + '</span>';
+            },
+        },
+    });
+</script>
+
 
 </html>
