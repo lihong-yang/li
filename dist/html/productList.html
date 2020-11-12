@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body,
+        ul,
+        li,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        * {
+            list-style: none;
+        }
+        
+        #prodList li {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            width: 220px;
+            border: 1px solid #cecece;
+        }
+        
+        #prodList p {
+            margin: 10px 0;
+            color: #555;
+            font-size: 14px;
+        }
+        
+        #prodList p:nth-of-type(2) {
+            margin: 10px 0;
+            color: red;
+            font-size: 14px;
+        }
+        
+        #prodList input {
+            width: 120px;
+            height: 40px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        #prodList img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="prodList">
+        <!-- <li>
+            <img src="1.jpg">
+            <p>书桌</p>
+            <p>100</p>
+            <input type="button" value="加入购物车">
+        </li> -->
+    </ul>
+    <script src="../js/cart.js"></script>
+    <script>
+        var productDatas = {
+            10001: {
+                id: 10001,
+                title: "伯纳天纯 经典系列",
+                price: 75.00,
+                imgsrc: "../img/9076bdb28.jpg"
+            }
+        }
+
+
+        localStorage.setItem("productDatas", JSON.stringify(productDatas));
+
+        //let productDatas = JSON.parse(localStorage.getItem("productDatas"));
+
+        let oPordList = document.getElementById("prodList");
+
+        let str = "";
+
+        for (let id in productDatas) {
+            str += `
+            <li data-id="${id}">
+                <a href="detail.html?id=${id}">
+                    <img src="${productDatas[id].imgsrc}">
+                </a>
+                <p>${productDatas[id].title}</p>
+                <p>${productDatas[id].price}</p>
+                <input type="button" value="加入购物车" data-id="${id}">
+            </li>
+            `;
+        }
+
+        oPordList.innerHTML = str;
+
+        /* let aList = document.querySelectorAll("li");
+          for(let i = 0; i < aList.length; i++){
+              aList[i].onclick = function(){
+                  let id = this.getAttribute("data-id");
+                  setCookie("productID",id,1);
+              }
+          } */
+
+        let cart = new Cart();
+        let aInput = document.querySelectorAll("li");
+        for (let i = 0; i < aInput.length; i++) {
+            aInput[i].onclick = function() {
+                let id = this.getAttribute("data-id");
+                cart.saveData(id, 1, false);
+            };
+        }
+    </script>
+</body>
+
+</html>

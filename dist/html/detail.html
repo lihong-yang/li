@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商品详情</title>
+</head>
+
+<body>
+    <div id="detail"></div>
+    <script src="../js/cart.js"></script>
+    <script>
+        let id = location.search.split("=")[1];
+        //console.log(id);
+        let productDatas = JSON.parse(localStorage.getItem("productDatas"));
+
+        let product = productDatas[id];
+
+        let oDetail = document.getElementById("detail");
+
+        oDetail.innerHTML = `
+            <img src="${product.imgsrc}">
+            <p>${product.title}</p>
+            <p>${product.price}</p>
+            <span>-</span><input type="text" value="1"><span>+</span>
+            <input type="button" value="加入购物车" id="addBtn">
+        `;
+
+        let cart = new Cart();
+
+        let oBtn = document.getElementById("addBtn");
+
+        let minus = oDetail.getElementsByTagName("span")[0];
+        let plus = oDetail.getElementsByTagName("span")[1];
+        let oTxt = oDetail.getElementsByTagName("input")[0];
+
+        minus.onclick = function() {
+            oTxt.value--;
+            if (oTxt.value < 1) {
+                oTxt.value = 1;
+            }
+        };
+        plus.onclick = function() {
+            oTxt.value++;
+        };
+
+        oTxt.onchange = function() {
+            if (oTxt.value < 1) {
+                oTxt.value = 1;
+            }
+        };
+
+        oBtn.onclick = function() {
+            cart.saveData(id, +oTxt.value, false);
+            location.href = "cartList.html";
+        };
+    </script>
+</body>
+
+</html>

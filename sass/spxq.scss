@@ -1,0 +1,405 @@
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+i,
+b {
+    font: 12px 'Microsoft Yahei', Tahoma, Simsun;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    background-color: #cecece
+}
+
+hr {
+    font-weight: 800;
+    color: green
+}
+
+.spxq {
+    width: 1200px;
+    // height: 500px;
+    background: white;
+    margin: auto;
+    margin-top: 4px;
+}
+
+.spxq-left {
+    width: 202px;
+    height: 257px;
+    background: white;
+    border: 1px solid #DDD;
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+.spxq-left h2 {
+    border-bottom: 2px solid #85BC56;
+    font-weight: 400;
+    height: 30px;
+    line-height: 30px;
+    background-color: #FFF;
+}
+
+.spxq-left h2 span {
+    // display: block;
+    float: left;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.spxq-left h2 a {
+    color: #444;
+    float: right;
+    font-weight: 400;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+.exclass h4 {
+    font-weight: 700;
+    line-height: 25px;
+    border-bottom: 1px #ddd solid;
+    border-top: 1px #ddd solid;
+    height: 25px;
+    background-color: #F1F1F1;
+    font-size: 14px;
+    padding-left: 10px;
+    margin: 0;
+    margin-top: -12px;
+}
+
+.exclass h4 span {
+    color: #444;
+}
+
+.excls li a {
+    color: #444;
+}
+
+.excls li {
+    height: 34px;
+}
+
+.spxq-right-top {
+    height: 108px;
+    width: 980px;
+    float: right;
+    margin-top: -257px;
+    border: 1px solid #ddd;
+}
+
+.spxq-right-top a span {
+    width: 70px;
+    height: 53px;
+    color: #444;
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    line-height: 53px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background: url(../img/paixu-ico.png) no-repeat;
+    background-position: 40px 3px;
+}
+
+.spxq-right-top a span:hover {
+    background: green;
+    color: white
+}
+
+.spxq-right-top a:nth-of-type(6) span {
+    background: url(../img/paixu-ico.png) no-repeat;
+    background-position: 40px -174px;
+}
+
+.youhuo {
+    height: 53px;
+    width: 135px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    float: right;
+    padding: 0 23px 0 18px;
+    line-height: 53px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -54px;
+    margin-left: 424px;
+    text-align: center
+}
+
+.checkBox {
+    margin: 19px 2px 0 10px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-position: 0 -322px;
+    background-image: url(../img/ico.gif);
+    background-repeat: no-repeat;
+}
+
+.spxq-right .pad10 {
+    width: 320px;
+    height: 50px;
+    background: white;
+    float: right;
+    margin-top: -257px;
+}
+
+.spxq-right .pad10 span:nth-of-type(1) {
+    line-height: 50px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.spxq-right .pad10 span:nth-of-type(1) em {
+    color: red;
+    font-style: normal
+}
+
+.spxq-right .pad10 a:nth-of-type(2) {
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    float: right;
+    background: #eee;
+    color: #444;
+    line-height: 29px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.spxq-right .pad10 a:nth-of-type(1) {
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    float: right;
+    background: #eee;
+    margin-left: 10px;
+    color: #999;
+    line-height: 29px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.spxq-right .ml20 form {
+    width: 948px;
+    height: 22px;
+    display: inline-block;
+    float: right;
+    margin-top: -186px
+}
+
+.spxq-right .ml20 form span {
+    background: none;
+    height: auto;
+    float: none;
+    padding: 0;
+    display: inline-block;
+    border: none;
+    line-height: inherit;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 5px;
+    color: #999;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.spxq-right .ml20 form input {
+    width: 50px;
+    border: 1px solid #d7d7d7;
+    padding: 0 5px;
+    height: 20px;
+    outline: none;
+}
+
+.spxq-right .ml20 form button {
+    background: #53aa5b;
+    color: #fff;
+    width: 40px;
+    height: 22px;
+    line-height: 22px;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    margin-left: 5px
+}
+
+.spxq-right-center {
+    width: 980px;
+    height: 360px;
+    background: white;
+    float: right;
+    margin-top: -136px;
+    border: 1px solid #d7d7d7;
+}
+
+.spxq-right-center .mb th {
+    width: 80px;
+    text-align: right;
+    color: #999;
+    border-bottom: 1px #EFEFEF dashed;
+    vertical-align: top;
+    line-height: 20px;
+    padding: 10px 0 0;
+}
+
+.spxq-right-center .mb td {
+    padding: 10px 0 0;
+}
+
+.fil-li a {
+    float: left;
+    background: white;
+    width: 121px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    text-decoration: none;
+    color: #444;
+    font-size: 12px;
+    border: 1px solid #cecece;
+}
+
+.fil-li a:hover {
+    background: #fff6ef;
+    color: red
+}
+
+#all_0 a {
+    color: red
+}
+
+#attribute table td i {
+    color: #248DCC;
+    float: right;
+}
+
+#attribute table td span {
+    // width: 55px;
+    // height: 20px;
+    color: #444;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
+
+#attribute table td span:hover {
+    border-radius: 10px;
+    background: orange;
+}
+
+.spxq-right-footer {
+    width: 960px;
+    height: 76px;
+    background: white;
+    clear: both;
+    color: #999;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.spxq-right-footer a {
+    border: 1px solid #ddd;
+    margin: 2px;
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 30px;
+    height: 30px;
+    background-color: #FFF;
+    display: inline-block;
+    color: #444;
+}
+
+.spxq-right-footer em {
+    font-style: normal
+}
+
+.spxq-right-footer a:hover {
+    background: orange;
+    color: white;
+}
+
+.jd {
+    width: 980px;
+    height: 800px;
+    background: white;
+    margin-top: 55px;
+}
+
+#list {
+    display: flex;
+    margin-left: -39px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#list li {
+    width: 235px;
+    height: 360px;
+    border: 1px solid black;
+    margin: 25px 0 0 0
+}
+
+#list li:hover {
+    border: 1px solid greenyellow;
+}
+
+#list li img {
+    margin-top: 20px;
+    margin-left: 18px;
+}
+
+#list li span {
+    display: block;
+    height: 39px;
+    font-size: 16px;
+    text-align: center
+}
+
+#list li span:hover {
+    color: blue
+}
+
+#list li span:nth-of-type(3):hover {
+    color: red
+}
+
+#list li a {
+    display: inline-block
+}

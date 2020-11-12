@@ -1,0 +1,429 @@
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+i,
+b {
+    font: 12px 'Microsoft Yahei', Tahoma, Simsun;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+}
+
+.nav {
+    width: 1200px;
+    height: 752px;
+    margin: auto;
+    margin-top: -6px;
+}
+
+.nav p {
+    margin-top: 30px;
+}
+
+.nav p span {
+    color: #999;
+    font-size: 12px;
+    float: left
+}
+
+.nav p span:hover {
+    color: #6060F3
+}
+
+.nav p span:nth-of-type(2) {
+    background: url(../img/ia_1000003665.jpg) no-repeat;
+    margin-left: 70px;
+}
+
+.nav p span:nth-of-type(3) {
+    background: url(../img/ia_1000003665.jpg) no-repeat;
+    margin-left: 20px;
+}
+
+.nav-right {
+    width: 667px;
+    height: 667px;
+    background: white;
+    float: right;
+    margin-top: -331px;
+    margin-right: 120px;
+}
+
+.nav-right h1 {
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.nav-right h2 {
+    color: #e3393c;
+    font-size: 14px;
+}
+
+.nav-right .djs {
+    display: block;
+    width: 667px;
+    height: 63px;
+    background: url(../img/651d7a597b1696b0d77079d499e8cb69.png);
+    // font-size: 22px;
+    // color: white;
+}
+
+.nav-right .djs span {
+    font-size: 20px;
+    color: #fff;
+    line-height: 63px;
+    margin-left: 20px;
+}
+
+#Time {
+    width: 250px;
+    height: 63px;
+    float: right;
+    font-size: 20px;
+    color: white;
+    line-height: 63px;
+}
+
+.nav-right .jg {
+    width: 667px;
+    height: 55px;
+    background: #f3f3f3;
+}
+
+.nav-right .jg span:nth-of-type(1) {
+    margin-top: 20px;
+    float: left;
+    color: #999;
+    font-size: 14px;
+}
+
+.nav-right .jg span:nth-of-type(2) {
+    color: #e3393c;
+    font-size: 20px;
+}
+
+.nav-right .jg span:nth-of-type(3) {
+    font-size: 34px;
+    color: #e3393c;
+    font-weight: 700;
+}
+
+.nav-right .jg span:nth-of-type(4) {
+    color: #333;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+#yx {
+    width: 667px;
+    height: 94px;
+    background: white;
+    border-bottom: 1px dashed black
+}
+
+#yx h1 {
+    width: 667px;
+    height: 32px;
+    margin: 0;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#yx h1 span {
+    color: #999;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 400
+}
+
+#yx h1 span em {
+    color: #e54649;
+    line-height: 25px;
+    font-size: 14px;
+    font-style: normal;
+}
+
+#yx h1 span i {
+    color: #78b300;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+#yx h2 {
+    width: 667px;
+    height: 32px;
+    margin: 0;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#yx h2 span {
+    float: left;
+    width: 100px;
+}
+
+#yx h2 span img {
+    width: 20px;
+    height: 20px;
+}
+
+#yx h2 span em {
+    width: 100px;
+    height: 20px;
+    font-style: normal;
+    position: absolute;
+    margin-left: 25px;
+    display: inline-block;
+    margin-top: -20px;
+    color: black;
+}
+
+.gg {
+    border-bottom: 1px dashed black
+}
+
+.gg h3 {
+    width: 667px;
+    height: 31px;
+    margin: 0;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.gg h3 span {
+    float: left;
+    width: 200px;
+    color: #999;
+    font-size: 14px;
+}
+
+.gg h3 a:nth-of-type(1) em {
+    display: inline-block;
+    height: 26px;
+    width: 57px;
+    border: 1px solid #cecece;
+    margin-top: 0px;
+    color: #333;
+    line-height: 24px;
+    background: #fff;
+    margin-right: 5px;
+    margin: 0px 5px 5px 0px;
+    font-style: normal;
+    text-align: center
+}
+
+.gg h3 a:nth-of-type(1) em img {
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 40px;
+}
+
+.gg h3 a:nth-of-type(2) em {
+    display: inline-block;
+    height: 26px;
+    width: 57px;
+    border: 1px solid #cecece;
+    margin-top: 0px;
+    color: #333;
+    line-height: 24px;
+    background: #fff;
+    margin-right: 5px;
+    margin: 0px 5px 5px 0px;
+    font-style: normal;
+    text-align: center
+}
+
+.gg h4 {
+    width: 667px;
+    height: 46px;
+    margin: 0;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.gg h4 span {
+    float: left;
+    // width: 280px;
+    height: 46px;
+    color: #999;
+    font-size: 14px;
+}
+
+.gg h4 input {
+    font-size: 14px;
+    width: 36px;
+    height: 18px;
+}
+
+.gg h4 button {
+    height: 25px;
+    border: none
+}
+
+.gg h4 button:nth-of-type(2) {
+    margin-left: -3px;
+}
+
+.gg h5 {
+    width: 667px;
+    height: 46px;
+    margin: 0;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.gg h5 span {
+    float: left;
+    width: 200px;
+    height: 46px;
+    color: #999;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.gg h5 span i {
+    display: inline-block;
+    height: 36px;
+    width: 90px;
+    border: 1px solid #cecece;
+    position: absolute;
+    margin-top: -10px;
+    color: #333;
+    line-height: 36px;
+    background: #fff;
+    text-align: center;
+}
+
+.nav-right .xd {
+    margin-top: 30px;
+}
+
+.nav-right .xd span:nth-of-type(1) {
+    font-size: 13px;
+    color: #777;
+    font-style: normal
+}
+
+.nav-right .xd span:nth-of-type(2) {
+    font-size: 13px;
+    color: #222;
+    font-style: normal
+}
+
+.nav-right .xd span:nth-of-type(2):hover {
+    color: red;
+}
+
+#btn {
+    width: 190px;
+    height: 56px;
+    background: red;
+    color: white;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+#tzjm {
+    width: 610px;
+    height: 300px;
+    background: white;
+    margin: 44px 0 0 40px;
+    border: 1px solid #999;
+    position: absolute;
+    margin-top: -440px;
+    margin-left: 550px;
+    border-radius: 10px;
+    display: none
+}
+
+#tzjm img {
+    margin: 44px 0 0 40px;
+}
+
+#tzjm .tzjm-right {
+    width: 376px;
+    height: 180px;
+    // background: pink;
+    float: right;
+    margin-top: -189px;
+    margin-right: -50px;
+}
+
+#tzjm .tzjm-right h1 {
+    margin: 0;
+    font-size: 16px;
+    margin-top: 48px;
+    overflow: hidden;
+    padding-right: 16px;
+    font-weight: 400;
+}
+
+#tzjm .tzjm-right h2 {
+    font-size: 14px;
+    margin-top: 15px;
+    overflow: hidden;
+    padding-right: 16px;
+}
+
+#tzjm .tzjm-right h2 span {
+    color: #f03e3e;
+    font-weight: 400;
+}
+
+#tzjm .tzjm-right h2 span:nth-of-type(2) {
+    font-size: 18px;
+}
+
+#tzjm .tzjm-right a button {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+    color: #999;
+    margin-right: 20px;
+}
+
+#tzjm .tzjm-right a:nth-of-type(2) button {
+    background: red;
+    color: white;
+}
