@@ -6,15 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+        * {
+            list-style: none;
+        }
+        
+        body {
+            margin: 50px;
+            background: #cecece
+        }
+        
+        input {
+            background: red;
+            border: 1px solid black;
+            margin: 0 3px
+        }
+        
+        #checkAll {
+            /* background: yellow; */
+            color: red
+        }
+        
         img {
             width: 30px;
+        }
+        
+        #totalPrice {
+            position: relative;
+            margin-left: 50px;
+            margin-top: -17px;
+        }
+        
+        #cartList {
+            border: 1px solid black;
+            height: 300px;
+            background: rosybrown
+        }
+        
+        #cartList li {
+            border: 1px solid black;
+            margin: 25px 0;
+            background: goldenrod;
+            height: 40px;
+        }
+        
+        span.del {
+            color: black;
+            font-size: 30px;
+            font-weight: 600;
+            margin-left: 240px;
         }
     </style>
 </head>
 
 <body>
-    <input type="checkbox" id="checkAll" />全选
+    <hr>
+    <input type="checkbox" id="checkAll" />全部选中
     <ul id="cartList"></ul>
+    <span>总计：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;元</span>
     <div id="totalPrice">0</div>
     <script src="../js/cart.js"></script>
     <script>

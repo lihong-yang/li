@@ -5,6 +5,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>商品详情</title>
+    <style>
+        div {
+            background: pink;
+            height: 200px;
+        }
+        
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            margin-top: 40px;
+        }
+        
+        p:nth-of-type(1) {
+            position: absolute;
+            color: red;
+            margin-left: 210px;
+            margin-top: -100px
+        }
+        
+        p:nth-of-type(2) {
+            position: absolute;
+            color: red;
+            margin-left: 150px;
+            margin-top: -100px
+        }
+    </style>
 </head>
 
 <body>
@@ -14,11 +41,8 @@
         let id = location.search.split("=")[1];
         //console.log(id);
         let productDatas = JSON.parse(localStorage.getItem("productDatas"));
-
         let product = productDatas[id];
-
         let oDetail = document.getElementById("detail");
-
         oDetail.innerHTML = `
             <img src="${product.imgsrc}">
             <p>${product.title}</p>
@@ -26,11 +50,8 @@
             <span>-</span><input type="text" value="1"><span>+</span>
             <input type="button" value="加入购物车" id="addBtn">
         `;
-
         let cart = new Cart();
-
         let oBtn = document.getElementById("addBtn");
-
         let minus = oDetail.getElementsByTagName("span")[0];
         let plus = oDetail.getElementsByTagName("span")[1];
         let oTxt = oDetail.getElementsByTagName("input")[0];

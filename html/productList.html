@@ -20,10 +20,14 @@
         
         #prodList li {
             float: left;
-            margin: 10px;
+            margin: 20px;
             padding: 10px;
-            width: 220px;
-            border: 1px solid #cecece;
+            width: 200px;
+            border: 1px solid black;
+        }
+        
+        #prodList li:hover {
+            border: 1px solid red;
         }
         
         #prodList p {
@@ -65,19 +69,37 @@
     </ul>
     <script src="../js/cart.js"></script>
     <script>
-        var productDatas = {
-            10001: {
-                id: 10001,
-                title: "伯纳天纯 经典系列",
-                price: 75.00,
-                imgsrc: "../img/9076bdb28.jpg"
-            }
-        }
+        // var productDatas = {
+        //     10001: {
+        //         id: 10001,
+        //         title: "伯纳天纯 经典系列",
+        //         price: "￥" + 75 + ".00",
+        //         imgsrc: "../img/9076bdb28.jpg"
+        //     },
+        //     10002: {
+        //         id: 10004,
+        //         title: "鸡肉+蔬菜配方",
+        //         price: "￥" + 2.9 + "0",
+        //         imgsrc: "../img/7fe26688070257f408c5d7c8a7efcc84.jpg"
+        //     },
+        //     10003: {
+        //         id: 10004,
+        //         title: "鸡肉+鳕鱼配方",
+        //         price: "￥" + 6.00 + ".00",
+        //         imgsrc: "../img/162926_281446.jpg"
+        //     },
+        //     10004: {
+        //         id: 10004,
+        //         title: "牛肉+蔬菜配方",
+        //         price: "￥" + 4.5 + "0",
+        //         imgsrc: "../img/861dea4f7cb8ca2865419150156be541.jpg"
+        //     }
+        // }
 
 
-        localStorage.setItem("productDatas", JSON.stringify(productDatas));
+        //localStorage.setItem("productDatas", JSON.stringify(productDatas));
 
-        //let productDatas = JSON.parse(localStorage.getItem("productDatas"));
+        let productDatas = JSON.parse(localStorage.getItem("productDatas"));
 
         let oPordList = document.getElementById("prodList");
 
