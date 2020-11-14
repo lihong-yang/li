@@ -20,7 +20,7 @@
         
         #prodList li {
             float: left;
-            margin: 20px;
+            margin: 10px;
             padding: 10px;
             width: 200px;
             border: 1px solid black;
@@ -69,37 +69,123 @@
     </ul>
     <script src="../js/cart.js"></script>
     <script>
-        // var productDatas = {
-        //     10001: {
-        //         id: 10001,
-        //         title: "伯纳天纯 经典系列",
-        //         price: "￥" + 75 + ".00",
-        //         imgsrc: "../img/9076bdb28.jpg"
-        //     },
-        //     10002: {
-        //         id: 10004,
-        //         title: "鸡肉+蔬菜配方",
-        //         price: "￥" + 2.9 + "0",
-        //         imgsrc: "../img/7fe26688070257f408c5d7c8a7efcc84.jpg"
-        //     },
-        //     10003: {
-        //         id: 10004,
-        //         title: "鸡肉+鳕鱼配方",
-        //         price: "￥" + 6.00 + ".00",
-        //         imgsrc: "../img/162926_281446.jpg"
-        //     },
-        //     10004: {
-        //         id: 10004,
-        //         title: "牛肉+蔬菜配方",
-        //         price: "￥" + 4.5 + "0",
-        //         imgsrc: "../img/861dea4f7cb8ca2865419150156be541.jpg"
-        //     }
-        // }
+        var productDatas = {
+            10001: {
+                id: 10001,
+                title: "伯纳天纯 经典系列",
+                price: "￥" + 75 + ".00",
+                imgsrc: "../img/9076bdb28.jpg"
+            },
+            10002: {
+                id: 10004,
+                title: "鸡肉+蔬菜配方",
+                price: "￥" + 2.9 + "0",
+                imgsrc: "../img/7fe26688070257f408c5d7c8a7efcc84.jpg"
+            },
+            10003: {
+                id: 10004,
+                title: "鸡肉+鳕鱼配方",
+                price: "￥" + 6.00 + ".00",
+                imgsrc: "../img/162926_281446.jpg"
+            },
+            10004: {
+                id: 10004,
+                title: "牛肉+蔬菜配方",
+                price: "￥" + 4.5 + "0",
+                imgsrc: "../img/861dea4f7cb8ca2865419150156be541.jpg"
+            },
+            10005: {
+                id: 10005,
+                title: "健康膳食配方 成犬粮 10kg",
+                price: "￥" + 235 + ".00",
+                imgsrc: "../img/26889523bf56019206dc90ed0f9197d0.jpg"
+            },
+            10006: {
+                id: 10006,
+                title: "无谷六种肉配方全犬粮 8kg",
+                price: "￥" + 219 + ".00",
+                imgsrc: "../img/cbbea090f53e43740546a0b568aa4f59.jpg"
+            },
+            10007: {
+                id: 10007,
+                title: "美毛全期犬粮 2kg ",
+                price: "￥" + 62 + ".00",
+                imgsrc: "../img/1a4046846f8291f4b914062539e14b90.jpg"
+            },
+            10008: {
+                id: 10008,
+                title: "无谷六种肉配方全犬粮 2kg",
+                price: "￥" + 219 + ".00",
+                imgsrc: "../img/527664166a0ab076e01589ee235ae67e.jpg"
+            },
+            10009: {
+                id: 10009,
+                title: "比瑞吉泰迪贵宾犬粮2kg牛棒骨",
+                price: "￥" + 167 + ".00",
+                imgsrc: "../img/183452_775148.jpg"
+            },
+            10010: {
+                id: 10010,
+                title: "成犬粮性价比套餐",
+                price: "￥" + 358.7 + "0",
+                imgsrc: "../img/2026010_681940.jpg"
+            },
+            10011: {
+                id: 10011,
+                title: "比瑞吉 俱乐部全犬种成犬粮 2kg",
+                price: "￥" + 72 + ".00",
+                imgsrc: "../img/121233_661273.jpg"
+            },
+            10012: {
+                id: 10012,
+                title: "健康型天然粮大型犬粮 15kg",
+                price: "￥" + 569 + ".00",
+                imgsrc: "../img/0105045_289282.jpg"
+            },
+            10013: {
+                id: 10013,
+                title: "优选系列 全犬种犬粮 12kg",
+                price: "￥" + 535 + ".00",
+                imgsrc: "../img/144211_763710.jpg"
+            },
+            10014: {
+                id: 10014,
+                title: "蜜特思 膨润土猫砂 10kg*2袋",
+                price: "￥" + 19.99,
+                imgsrc: "../img/0a3daf535891c651255fe80e3d23f7c8.jpg"
+            },
+            10015: {
+                id: 10015,
+                title: "洁珊 膨润土强凝聚力猫砂9L",
+                price: "￥" + 38 + ".00",
+                imgsrc: "../img/134a7e19737308c0e4265f9b40c58cd0.jpg"
+            },
+            10016: {
+                id: 10016,
+                title: "天然钠基膨润土豆腐混合猫砂",
+                price: "￥" + 19.9 + "0",
+                imgsrc: "../img/b8f68131ae4a4edf0ce49a132f31a529.jpg"
+            },
+            10017: {
+                id: 10017,
+                title: "双重活性炭粗颗粒结块猫砂",
+                price: "￥" + 129 + ".00",
+                imgsrc: "../img/02de0d5e798a8698aafe61cce807a707.jpg"
+            },
+            10018: {
+                id: 10018,
+                title: "即效除臭型结团猫砂 9.07kg",
+                price: "￥" + 158 + ".00",
+                imgsrc: "../img/091213_687530.jpg"
+            }
 
 
-        //localStorage.setItem("productDatas", JSON.stringify(productDatas));
+        }
 
-        let productDatas = JSON.parse(localStorage.getItem("productDatas"));
+
+        localStorage.setItem("productDatas", JSON.stringify(productDatas));
+
+        //let productDatas = JSON.parse(localStorage.getItem("productDatas"));
 
         let oPordList = document.getElementById("prodList");
 

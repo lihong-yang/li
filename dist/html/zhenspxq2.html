@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="../css/zhenspxq.css">
     <script src="../js/spxq.js"></script>
     <!-- <script src="../js/index.js"></script> -->
+
     <title>Document</title>
     <style>
         img {
@@ -66,6 +66,9 @@
 </head>
 
 <body>
+    <!-- <ul id="list1">
+
+    </ul> -->
     <hr>
     <div class="nav">
         <div id="zoomBox">
@@ -214,7 +217,7 @@
                 box.innerText = "秒杀结束";
             }
         }
-        var oDate = new Date("2020/11/13 12:00:00");
+        var oDate = new Date("2020/11/14 21:30:00");
         time(oDate);
         var timer = setInterval(function() {
             time(oDate);
@@ -231,20 +234,12 @@
         }
 
         $(function() {
-                $(".increment").click(function() {
-                    $(this).css({
-                        "background": "red"
-                    })
+            $(".increment").click(function() {
+                $(this).css({
+                    "background": "red"
                 })
             })
-            // var increment = document.querySelector(".increment");
-            // var decrement = document.querySelector(".decrement");
-            // var itxt = document.querySelector(".itxt");
-            // let num = 0;
-            // increment.onclick = () => {
-            //     num++;
-            //     itxt.innerText = `${num}`
-            // }
+        })
     </script>
     <script>
         // $(function() {
@@ -280,7 +275,37 @@
 
         }
     </script>
-    <script src="../dist/js/jquery-1.11.0.js"></script>
+    <script src="../js/jquery-1.11.0.js"></script>
+    <!-- <script>
+        $(function() {
+            $.ajax({
+                url: "http://jx.xuzhixiang.top/ap/api/productlist.php",
+                type: "get",
+                data: {
+                    uid: 43966
+                },
+                success: function(res) {
+                    console.log(res.data)
+                    let products = res.data;
+
+                    let html = "";
+                    products.forEach(v => {
+                        html +=
+                            `<li>
+                    <a href="zhenspxq2.html?pid=${v.pid}">
+                    <img src="${v.pimg}"alt=""></a>
+                    <div>
+                        <span>${v.pname}</span>
+                        <span>${v.pdesc}</span>
+                        <span>${v.pprice}<i>元起</i></span>
+                    </div>
+                    </li>`
+                    })
+                    $("#list1").html(html);
+                }
+            })
+        })
+    </script> -->
 
 </body>
 

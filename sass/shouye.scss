@@ -3619,6 +3619,11 @@ hr {
     opacity: 1
 }
 
+#right .gwc {
+    background-position: 0 -270px;
+    background-image: url(../img/ia_100000374.png);
+}
+
 #denglukuang {
     width: 300px;
     height: 100px;
@@ -3712,3 +3717,20 @@ hr {
     margin: 0 5px;
     font-size: 14px;
 }
+
+// #shouye #tanchukuang {
+//     width: 300px;
+//     height: 200px;
+//     background: white;
+//     position: absolute;
+//     z-index: 1001;
+//     top: 30px;
+//     right: 289px;
+//     border: 1px solid #cecece;
+//     display: none;
+// }
+// #list1 {
+//     width: 400px;
+//     height: 600px;
+//     border: 1px solid;
+// }
